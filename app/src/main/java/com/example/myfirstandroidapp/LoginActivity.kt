@@ -27,8 +27,8 @@ class LoginActivity : AppCompatActivity() {
         val passWord: EditText = findViewById(R.id.pass)
 
         loginButton.setOnClickListener {
-            val username = EditText.text.toString()
-            val password = EditText.text.toString()
+            val username = userName.text.toString()
+            val password = passWord.text.toString()
 
             if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please enter both username and password", Toast.LENGTH_SHORT).show()
