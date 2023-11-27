@@ -40,26 +40,30 @@
         app:layout_constraintTop_toBottomOf="@+id/header1"/>
 
     <EditText
-        android:id="@+id/starterHint"
+        android:id="@+id/starter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
-        android:layout_margin="0dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:padding="30dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/header1"/>
 
     <EditText
+        android:id="@+id/pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:layout_margin="0dp"
-        android:layout_marginBottom="0dp"
-        app:layout_constraintEnd_toEndOf="@+id/starterHint"
-        app:layout_constraintTop_toBottomOf="@+id/starterHint"/>
+        android:inputType="textPassword"
+        android:layout_marginTop="0dp"
+        android:padding="30dp"
+        app:layout_constraintStart_toStartOf="@id/pass"
+        app:layout_constraintEnd_toEndOf="@+id/starter"
+        app:layout_constraintTop_toBottomOf="@+id/starter"/>
 
     <Button
-        android:id="@+id/curve"
+        android:id="@+id/logNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
@@ -71,26 +75,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <TextView
+    <Button
         android:id="@+id/firstWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
         android:text="Forgotten Password?"
         android:textColor="#2C2A2A"
         android:textSize="15dp"
-        app:layout_constraintStart_toStartOf="@id/curve"
-        app:layout_constraintTop_toBottomOf="@id/curve" />
+        android:backgroundTint="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logNow" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Or Create a New Account"
         android:textSize="15dp"
         android:textColor="#302F2F"
-        app:layout_constraintStart_toStartOf="@id/firstWord"
+        android:backgroundTint="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/firstWord" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
