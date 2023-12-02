@@ -76,7 +76,7 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <Button
-        android:id="@+id/firstWord"
+        android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -89,6 +89,7 @@
         app:layout_constraintTop_toBottomOf="@id/logNow" />
 
     <Button
+        android:id="@+id/createNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Or Create a New Account"
@@ -97,7 +98,7 @@
         android:backgroundTint="#fff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/firstWord" />
+        app:layout_constraintTop_toBottomOf="@id/forgotPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
